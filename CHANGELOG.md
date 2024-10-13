@@ -2,6 +2,13 @@
 
 All notable changes to the LaunchDarkly Python OTEL package will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org).
 
+## [1.1.0](https://github.com/MayhemYDG/repo-10/compare/v1.0.0...1.1.0) (2024-10-13)
+
+
+### Features
+
+* Add tracing hook implementation ([#1](https://github.com/MayhemYDG/repo-10/issues/1)) ([3f13171](https://github.com/MayhemYDG/repo-10/commit/3f13171770f81dcc932b66d2fd578e37c7e49bbd))
+
 ## 1.0.0 (2024-04-30)
 
 
