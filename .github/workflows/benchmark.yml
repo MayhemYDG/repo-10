@@ -282,7 +282,7 @@ jobs:
     - continue-on-error: true
       if: ${{ github.event.pull_request.head.repo.full_name == 'cloudflare/pint' }}
       name: Report
-      uses: thollander/actions-comment-pull-request@fabd468d3a1a0b97feee5f6b9e499eab0dd903f6
+      uses: thollander/actions-comment-pull-request@e2c37e53a7d2227b61585343765f73a9ca57eda9
       with:
         comment_tag: benchstat
         filePath: benchstat.txt
