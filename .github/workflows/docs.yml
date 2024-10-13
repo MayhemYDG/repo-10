@@ -510,7 +510,7 @@ jobs:
         show-progress: false
     - continue-on-error: true
       name: Spellcheck
-      uses: rojopolis/spellcheck-github-actions@0.42.0
+      uses: rojopolis/spellcheck-github-actions@0.43.0
       with:
         config_path: .github/spellcheck/config.yml
     - name: after
