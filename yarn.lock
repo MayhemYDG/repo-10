@@ -6829,7 +6829,7 @@ __metadata:
     "@adobe/gatsby-theme-aio": ^4.14.10
     gatsby: 4.22.0
     markdownlint: ^0.35.0
-    markdownlint-cli: ^0.41.0
+    markdownlint-cli: ^0.42.0
     react: ^17.0.2
     react-dom: ^17.0.2
     remark-cli: ^12.0.1
@@ -11216,7 +11216,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:^10.0.0, glob@npm:^10.2.2, glob@npm:^10.3.10, glob@npm:~10.4.1":
+"glob@npm:^10.0.0, glob@npm:^10.2.2, glob@npm:^10.3.10":
   version: 10.4.5
   resolution: "glob@npm:10.4.5"
   dependencies:
@@ -11243,6 +11243,22 @@ __metadata:
     once: ^1.3.0
     path-is-absolute: ^1.0.0
   checksum: 29452e97b38fa704dabb1d1045350fb2467cf0277e155aa9ff7077e90ad81d1ea9d53d3ee63bd37c05b09a065e90f16aec4a65f5b8de401d1dac40bc5605d133
+  languageName: node
+  linkType: hard
+
+"glob@npm:~11.0.0":
+  version: 11.0.0
+  resolution: "glob@npm:11.0.0"
+  dependencies:
+    foreground-child: ^3.1.0
+    jackspeak: ^4.0.1
+    minimatch: ^10.0.0
+    minipass: ^7.1.2
+    package-json-from-dist: ^1.0.0
+    path-scurry: ^2.0.0
+  bin:
+    glob: dist/esm/bin.mjs
+  checksum: 8a2dd914d5776987be5244624d9491bbcaf19f2387e06783737003ff696ebfd2264190c47014f8709c1c02d8bc892f17660cf986c587b107e194c0a3151ab333
   languageName: node
   linkType: hard
 
@@ -12080,10 +12096,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ignore@npm:^5.0.0, ignore@npm:^5.1.8, ignore@npm:^5.2.0, ignore@npm:~5.3.1":
+"ignore@npm:^5.0.0, ignore@npm:^5.1.8, ignore@npm:^5.2.0":
   version: 5.3.2
   resolution: "ignore@npm:5.3.2"
   checksum: 2acfd32a573260ea522ea0bfeff880af426d68f6831f973129e2ba7363f422923cf53aab62f8369cbf4667c7b25b6f8a3761b34ecdb284ea18e87a5262a865be
+  languageName: node
+  linkType: hard
+
+"ignore@npm:~6.0.2":
+  version: 6.0.2
+  resolution: "ignore@npm:6.0.2"
+  checksum: b5dfb811428a067d79c128144814d3d20f01ef21e19c2b2e5bc270895995ce352da9b0e1c46a33de7daaf214bf0cf59d3353c78cdf9e365aaea677db729c721e
   languageName: node
   linkType: hard
 
@@ -12979,6 +13002,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"jackspeak@npm:^4.0.1":
+  version: 4.0.2
+  resolution: "jackspeak@npm:4.0.2"
+  dependencies:
+    "@isaacs/cliui": ^8.0.2
+  checksum: 210030029edfa1658328799ad88c3d0fc057c4cb8a069fc4137cc8d2cc4b65c9721c6e749e890f9ca77a954bb54f200f715b8896e50d330e5f3e902e72b40974
+  languageName: node
+  linkType: hard
+
 "jest-worker@npm:^26.3.0":
   version: 26.6.2
   resolution: "jest-worker@npm:26.6.2"
@@ -13282,10 +13314,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jsonc-parser@npm:~3.2.1":
-  version: 3.2.1
-  resolution: "jsonc-parser@npm:3.2.1"
-  checksum: 656d9027b91de98d8ab91b3aa0d0a4cab7dc798a6830845ca664f3e76c82d46b973675bbe9b500fae1de37fd3e81aceacbaa2a57884bf2f8f29192150d2d1ef7
+"jsonc-parser@npm:~3.3.1":
+  version: 3.3.1
+  resolution: "jsonc-parser@npm:3.3.1"
+  checksum: 81ef19d98d9c6bd6e4a37a95e2753c51c21705cbeffd895e177f4b542cca9cda5fda12fb942a71a2e824a9132cf119dc2e642e9286386055e1365b5478f49a47
   languageName: node
   linkType: hard
 
@@ -13944,6 +13976,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lru-cache@npm:^11.0.0":
+  version: 11.0.1
+  resolution: "lru-cache@npm:11.0.1"
+  checksum: 6056230a99fb399234e82368b99586bd4740079e80649102f681b19337b7d8c6bc8dd7f8b8c59377c31d26deb89f548b717ae932e139b4b795879d920fccf820
+  languageName: node
+  linkType: hard
+
 "lru-cache@npm:^4.0.0":
   version: 4.1.5
   resolution: "lru-cache@npm:4.1.5"
@@ -14086,24 +14125,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"markdownlint-cli@npm:^0.41.0":
-  version: 0.41.0
-  resolution: "markdownlint-cli@npm:0.41.0"
+"markdownlint-cli@npm:^0.42.0":
+  version: 0.42.0
+  resolution: "markdownlint-cli@npm:0.42.0"
   dependencies:
     commander: ~12.1.0
     get-stdin: ~9.0.0
-    glob: ~10.4.1
-    ignore: ~5.3.1
+    glob: ~11.0.0
+    ignore: ~6.0.2
     js-yaml: ^4.1.0
-    jsonc-parser: ~3.2.1
+    jsonc-parser: ~3.3.1
     jsonpointer: 5.0.1
-    markdownlint: ~0.34.0
-    minimatch: ~9.0.4
+    markdownlint: ~0.35.0
+    minimatch: ~10.0.1
     run-con: ~1.3.2
-    smol-toml: ~1.2.0
+    smol-toml: ~1.3.0
   bin:
     markdownlint: markdownlint.js
-  checksum: e49b9c884fb3fc0b7ac48b54b32af5870ef09b25e192b7df722415c7ac6579e6662c07a51795f40ad04829d555eaa001debdbc3d7fca47634d2bc3c2a1694d1c
+  checksum: effd6f6e2197db0c25c34ea6d3002a46bf99fc78c1237e08f8fb2f86f8c29df2ae56fa21d68d37647bcab3c4cbd475dce7823423e3f6ed6ca9b306c42c718450
   languageName: node
   linkType: hard
 
@@ -14114,30 +14153,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"markdownlint-micromark@npm:0.1.9":
-  version: 0.1.9
-  resolution: "markdownlint-micromark@npm:0.1.9"
-  checksum: 517a15cdddd11803665df7061bf941790393c2308111e105eca0b321495a73b006f82d5911a13c20ff979cdef1c6ea663411d60be67f68c95fdbb1daf88c93ce
-  languageName: node
-  linkType: hard
-
-"markdownlint@npm:^0.35.0":
+"markdownlint@npm:^0.35.0, markdownlint@npm:~0.35.0":
   version: 0.35.0
   resolution: "markdownlint@npm:0.35.0"
   dependencies:
     markdown-it: 14.1.0
     markdownlint-micromark: 0.1.10
   checksum: 0d9a97237686ebebda0aa3f898fa724cb7eaa6ce66b436c03bfb852c4f8eb64b354214e965080cd3f11452e45a7bcb8d0a977006f75143d215208a3f6460e333
-  languageName: node
-  linkType: hard
-
-"markdownlint@npm:~0.34.0":
-  version: 0.34.0
-  resolution: "markdownlint@npm:0.34.0"
-  dependencies:
-    markdown-it: 14.1.0
-    markdownlint-micromark: 0.1.9
-  checksum: abd364ee7810650e6a07464f02415f87da016b3f34b44bb40fe78c6f6cfd00a0e39ab71284db0f40306d11c6951aaa8f2861ba2c1cdcc4132b5f157d8dfb5e51
   languageName: node
   linkType: hard
 
@@ -15033,6 +15055,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"minimatch@npm:^10.0.0, minimatch@npm:~10.0.1":
+  version: 10.0.1
+  resolution: "minimatch@npm:10.0.1"
+  dependencies:
+    brace-expansion: ^2.0.1
+  checksum: f5b63c2f30606091a057c5f679b067f84a2cd0ffbd2dbc9143bda850afd353c7be81949ff11ae0c86988f07390eeca64efd7143ee05a0dab37f6c6b38a2ebb6c
+  languageName: node
+  linkType: hard
+
 "minimatch@npm:^3.0.4, minimatch@npm:^3.0.5, minimatch@npm:^3.1.1, minimatch@npm:^3.1.2":
   version: 3.1.2
   resolution: "minimatch@npm:3.1.2"
@@ -15051,7 +15082,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimatch@npm:^9.0.0, minimatch@npm:^9.0.4, minimatch@npm:~9.0.4":
+"minimatch@npm:^9.0.0, minimatch@npm:^9.0.4":
   version: 9.0.5
   resolution: "minimatch@npm:9.0.5"
   dependencies:
@@ -16534,6 +16565,16 @@ __metadata:
     lru-cache: ^10.2.0
     minipass: ^5.0.0 || ^6.0.2 || ^7.0.0
   checksum: 890d5abcd593a7912dcce7cf7c6bf7a0b5648e3dee6caf0712c126ca0a65c7f3d7b9d769072a4d1baf370f61ce493ab5b038d59988688e0c5f3f646ee3c69023
+  languageName: node
+  linkType: hard
+
+"path-scurry@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "path-scurry@npm:2.0.0"
+  dependencies:
+    lru-cache: ^11.0.0
+    minipass: ^7.1.2
+  checksum: 9953ce3857f7e0796b187a7066eede63864b7e1dfc14bf0484249801a5ab9afb90d9a58fc533ebb1b552d23767df8aa6a2c6c62caf3f8a65f6ce336a97bbb484
   languageName: node
   linkType: hard
 
@@ -19143,10 +19184,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"smol-toml@npm:~1.2.0":
-  version: 1.2.2
-  resolution: "smol-toml@npm:1.2.2"
-  checksum: 1b797380d7a9b319673c587a47d4d7f10dd6c15f5a38316878dd5cb5ef4e175355d1f36e80c0c4922b4811f60ee3f937f6952d75ba985289eb2aa6c463097d2c
+"smol-toml@npm:~1.3.0":
+  version: 1.3.0
+  resolution: "smol-toml@npm:1.3.0"
+  checksum: 79e1db6b6cd32a13ad7602bfe1a02f20894fe599657a5cc2c8ffab7c3de4ba51f7426b701b513f9b859560918b36a63f7c73f7eaf6def8a1dc73db74ffd9b601
   languageName: node
   linkType: hard
 
