@@ -256,7 +256,7 @@ jobs:
         languages: java
     - continue-on-error: true
       name: Setup Java 11
-      uses: actions/setup-java@v2
+      uses: actions/setup-java@v4
       with:
         distribution: adopt
         java-version: 11
