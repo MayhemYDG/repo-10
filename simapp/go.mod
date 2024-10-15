@@ -9,7 +9,7 @@ replace github.com/cosmos/ibc-go/v9 => ../
 require (
 	cosmossdk.io/api v0.7.6
 	cosmossdk.io/client/v2 v2.0.0-beta.5
-	cosmossdk.io/core v0.11.1
+	cosmossdk.io/core v0.12.0
 	cosmossdk.io/log v1.4.1
 	cosmossdk.io/store v1.1.1
 	cosmossdk.io/tools/confix v0.1.2
