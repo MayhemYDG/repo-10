@@ -292,7 +292,7 @@ jobs:
     - continue-on-error: true
       id: template
       name: Render template
-      uses: chuhlomin/render-template@v1.9
+      uses: chuhlomin/render-template@v1.10
       with:
         template: .github/comment-template.md
         vars: 'foo: this
