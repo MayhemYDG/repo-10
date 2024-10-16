@@ -264,12 +264,12 @@ jobs:
       run: mkdir wheels && find _build/out \( -name 'protobuf*.whl' -o -name 'protobuf-*.tar.gz'
         \) -exec mv '{}' wheels ';'
     - continue-on-error: true
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: python-wheels
         path: wheels/
     - continue-on-error: true
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: requirements
         path: python/requirements.txt
