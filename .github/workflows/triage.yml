@@ -259,7 +259,7 @@ jobs:
         \ &&\n  github.event.action != 'closed' && github.event.pull_request.state\
         \ != 'closed'\n"
       name: Review pull request
-      uses: actions/github-script@v5
+      uses: actions/github-script@v7
       with:
         github-token: ${{ secrets.HOMEBREW_GITHUB_PUBLIC_REPO_TOKEN }}
         script: "async function approvePullRequest(pullRequestNumber) {\n  const reviews\
