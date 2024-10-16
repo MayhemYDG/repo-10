@@ -1,0 +1,14 @@
+  - name: backport patches to . branch
+    conditions:
+      - merged
+      - base=main
+      - label=backport-.
+    actions:
+      backport:
+        assignees:
+          - "{{ author }}"
+        labels:
+          - "backport"
+        branches:
+          - "."
+        title: "[{{ destination_branch }}](backport #{{ number }}) {{ title }}"
