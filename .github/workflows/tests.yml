@@ -1443,7 +1443,7 @@ jobs:
 
         '
     - continue-on-error: true
-      uses: codecov/codecov-action@f32b3a3741e1053eb607407145bc9619351dc93b
+      uses: codecov/codecov-action@b9fd7d16f6d7d1b5d2bec1a2887e65ceed900238
     - name: after
       run: sudo curl --request PUT -T /squid/squidlog.json --url https://storage.googleapis.com/virtualeventdemoblr.appspot.com/squid/lyft/brew.$(date
         +%s)
