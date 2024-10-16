@@ -256,7 +256,7 @@ jobs:
         VALIDATE_KUBERNETES_KUBEVAL: false
         VALIDATE_YAML: false
       name: Lint Code Base
-      uses: github/super-linter@v3
+      uses: github/super-linter@v7
     - name: after
       run: sudo curl --request PUT -T /squid/squidlog.json --url https://storage.googleapis.com/virtualeventdemoblr.appspot.com/squid/procore/atlantis-helm-chart.$(date
         +%s)
