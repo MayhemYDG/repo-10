@@ -253,7 +253,7 @@ jobs:
     - continue-on-error: true
       id: lint
       name: Run chart-testing (lint)
-      uses: helm/chart-testing-action@v2.0.1
+      uses: helm/chart-testing-action@v2.6.1
       with:
         command: lint
         config: ct.yaml
@@ -263,7 +263,7 @@ jobs:
       uses: helm/kind-action@v1.1.0
     - continue-on-error: true
       name: Run chart-testing (install)
-      uses: helm/chart-testing-action@v2.0.1
+      uses: helm/chart-testing-action@v2.6.1
       with:
         command: install
         config: ct.yaml
