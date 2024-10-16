@@ -517,7 +517,7 @@ jobs:
       uses: Homebrew/actions/setup-homebrew@master
     - continue-on-error: true
       name: Cache Bundler RubyGems
-      uses: actions/cache@v1
+      uses: actions/cache@v4
       with:
         key: ${{ runner.os }}-rubygems-${{ steps.set-up-homebrew.outputs.gems-hash
           }}
@@ -798,7 +798,7 @@ jobs:
       run: brew config
     - continue-on-error: true
       name: Cache Bundler RubyGems
-      uses: actions/cache@v1
+      uses: actions/cache@v4
       with:
         key: ${{ runner.os }}-rubygems-${{ steps.set-up-homebrew.outputs.gems-hash
           }}
@@ -1410,7 +1410,7 @@ jobs:
       uses: Homebrew/actions/setup-homebrew@master
     - continue-on-error: true
       name: Cache Bundler RubyGems
-      uses: actions/cache@v1
+      uses: actions/cache@v4
       with:
         key: ${{ runner.os }}-rubygems-${{ steps.set-up-homebrew.outputs.gems-hash
           }}
@@ -1424,7 +1424,7 @@ jobs:
       run: mkdir tests
     - continue-on-error: true
       name: Cache parallel tests log
-      uses: actions/cache@v1
+      uses: actions/cache@v4
       with:
         key: ${{ runner.os }}-${{ matrix.test-flags }}-parallel_runtime_rspec-${{
           github.sha }}
