@@ -1352,7 +1352,7 @@ jobs:
         number: ${{ github.event.client_payload.pull_request.number }}
       id: update-check-run
       if: ${{ always() }}
-      uses: actions/github-script@v6
+      uses: actions/github-script@v7
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         script: "const { data: pull } = await github.rest.pulls.get({\n  ...context.repo,\n\
