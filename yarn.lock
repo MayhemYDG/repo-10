@@ -4734,10 +4734,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mock-fs@npm:^5.1.2":
-  version: 5.1.2
-  resolution: "mock-fs@npm:5.1.2"
-  checksum: 04eaa16edbae8d60835a22e5dee4d4809b05aa948154edd37321cca7c6c9b967985ce0e30b47a3a421f3f4524080913a8130e87bc5198783fdf7b13f52251960
+"mock-fs@npm:^5.4.0":
+  version: 5.4.0
+  resolution: "mock-fs@npm:5.4.0"
+  checksum: 6462f6e26266cc537ff65c3f225e75b89eee94e6f5bf5bcaf67abce3548a10e27a9d3ff9479be554f2bd1fad0c1632ff961e0ae5ad44ede3c47215fd2371b2ba
   languageName: node
   linkType: hard
 
@@ -6189,7 +6189,7 @@ __metadata:
     lodash: ^4.17.20
     lodash.escaperegexp: ^4.1.2
     micromatch: ^4.0.2
-    mock-fs: ^5.1.2
+    mock-fs: ^5.4.0
     prettier: 2.5.1
     semver: ^7.5.4
     ts-jest: ^27.1.3
