@@ -253,7 +253,7 @@ jobs:
     - continue-on-error: true
       id: verify_api_creds
       name: Verify Veracode API credentials
-      uses: veracode/github-actions-integration-helper@v0.1.2
+      uses: veracode/github-actions-integration-helper@v0.1.4
       with:
         action: validateVeracodeApiCreds
         appname: ${{ github.event.client_payload.user_config.profile_name }}
@@ -266,7 +266,7 @@ jobs:
       id: verify_policy_name
       if: success()
       name: Verify Policy name
-      uses: veracode/github-actions-integration-helper@v0.1.2
+      uses: veracode/github-actions-integration-helper@v0.1.4
       with:
         action: validatePolicyName
         appname: ${{ github.event.client_payload.user_config.profile_name }}

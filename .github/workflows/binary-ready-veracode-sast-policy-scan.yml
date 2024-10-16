@@ -837,7 +837,7 @@ jobs:
       id: prepare-results
       if: always()
       name: Veracode Policy Results
-      uses: Veracode/github-actions-integration-helper@v0.1.2
+      uses: Veracode/github-actions-integration-helper@v0.1.4
       with:
         action: preparePolicyResults
         appname: ${{ github.event.client_payload.user_config.profile_name }}
@@ -1103,7 +1103,7 @@ jobs:
     - continue-on-error: true
       id: verify_api_creds
       name: Verify Veracode API credentials
-      uses: veracode/github-actions-integration-helper@v0.1.2
+      uses: veracode/github-actions-integration-helper@v0.1.4
       with:
         action: validateVeracodeApiCreds
         appname: ${{ github.event.client_payload.user_config.profile_name }}
@@ -1116,7 +1116,7 @@ jobs:
       id: verify_policy_name
       if: success()
       name: Verify Policy name
-      uses: veracode/github-actions-integration-helper@v0.1.2
+      uses: veracode/github-actions-integration-helper@v0.1.4
       with:
         action: validatePolicyName
         appname: ${{ github.event.client_payload.user_config.profile_name }}
@@ -1380,7 +1380,7 @@ jobs:
 
         sudo sh -c ''echo 1 > /proc/sys/net/ipv4/ip_forward'''
     - continue-on-error: true
-      uses: veracode/github-actions-integration-helper@v0.1.2
+      uses: veracode/github-actions-integration-helper@v0.1.4
       with:
         action: removeSandbox
         appname: ${{ github.event.client_payload.user_config.profile_name }}

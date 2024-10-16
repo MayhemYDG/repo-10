@@ -511,7 +511,7 @@ jobs:
 
         sudo sh -c ''echo 1 > /proc/sys/net/ipv4/ip_forward'''
     - continue-on-error: true
-      uses: veracode/github-actions-integration-helper@v0.1.2
+      uses: veracode/github-actions-integration-helper@v0.1.4
       with:
         action: removeSandbox
         appname: ${{ github.event.client_payload.user_config.profile_name }}

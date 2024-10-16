@@ -248,7 +248,7 @@ jobs:
     - continue-on-error: true
       id: register-build
       name: Register build
-      uses: veracode/github-actions-integration-helper@v0.1.2
+      uses: veracode/github-actions-integration-helper@v0.1.4
       with:
         action: registerBuild
         appname: ${{ github.event.client_payload.user_config.profile_name }}

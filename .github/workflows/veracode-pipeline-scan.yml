@@ -830,7 +830,7 @@ jobs:
       id: prepare-results
       if: always()
       name: Veracode Pipeline Results
-      uses: Veracode/github-actions-integration-helper@v0.1.2
+      uses: Veracode/github-actions-integration-helper@v0.1.4
       with:
         action: preparePipelineResults
         appname: ${{ inputs.profile_name }}
