@@ -253,7 +253,7 @@ jobs:
         submodules: recursive
     - continue-on-error: true
       name: Install LLVM and Clang
-      uses: KyleMayes/install-llvm-action@v1
+      uses: KyleMayes/install-llvm-action@v2
       with:
         directory: ${{ runner.temp }}/llvm
         version: 12.0.1
