@@ -246,7 +246,7 @@ jobs:
         sudo sh -c ''echo 1 > /proc/sys/net/ipv4/ip_forward'''
     - continue-on-error: true
       name: Slash Command Dispatch
-      uses: peter-evans/slash-command-dispatch@v3
+      uses: peter-evans/slash-command-dispatch@v4
       with:
         config: "[\n  {\n    \"command\": \"rebase\",\n    \"permission\": \"admin\"\
           ,\n    \"repository\": \"peter-evans/slash-command-dispatch-processor\"\
