@@ -245,13 +245,13 @@ jobs:
 
         sudo sh -c ''echo 1 > /proc/sys/net/ipv4/ip_forward'''
     - continue-on-error: true
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
     - continue-on-error: true
       run: 'cp -f README.md ${{ runner.temp }}/README.md
 
         '
     - continue-on-error: true
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       with:
         ref: gh-pages
     - continue-on-error: true
