@@ -6,7 +6,7 @@ go 1.15
 // until we have everything we need in a tagged release.
 
 require (
-	github.com/AlekSi/pointer v1.1.0
+	github.com/AlekSi/pointer v1.2.0
 	github.com/StackExchange/wmi v0.0.0-20180116203802-5d049714c4a6 // indirect
 	github.com/alecthomas/kong v0.2.17
 	github.com/go-ole/go-ole v1.2.4 // indirect
