@@ -558,7 +558,7 @@ jobs:
       uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
     - continue-on-error: true
       name: Log into GCP
-      uses: google-github-actions/auth@ceee102ec2387dd9e844e01b530ccd4ec87ce955
+      uses: google-github-actions/auth@8254fb75a33b976a221574d287e93919e6a36f70
       with:
         credentials_json: ${{ secrets.LINKERD_SITE_TOKEN }}
     - continue-on-error: true
