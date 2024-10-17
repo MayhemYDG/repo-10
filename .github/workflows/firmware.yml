@@ -563,7 +563,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       name: "\U0001F525 Create development release"
-      uses: softprops/action-gh-release@v1
+      uses: softprops/action-gh-release@v2
       with:
         body: "**\u26A0\uFE0F This is a development release, and it may be unstable.**\n\
           ${{steps.changelog.outputs.changelog}}\n"
@@ -851,7 +851,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       name: "\U0001F525 Create stable release"
-      uses: softprops/action-gh-release@v1
+      uses: softprops/action-gh-release@v2
       with:
         body: ${{steps.changelog.outputs.changelog}}
         draft: true
