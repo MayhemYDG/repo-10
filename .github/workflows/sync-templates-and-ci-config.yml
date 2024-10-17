@@ -269,7 +269,7 @@ jobs:
     - continue-on-error: true
       if: ${{ steps.detect_changes.outputs.pull_request == 'true' }}
       name: Create pull request
-      uses: peter-evans/create-pull-request@052fc72b4198ba9fbc81b818c6e1859f747d49a8
+      uses: peter-evans/create-pull-request@5e914681df9dc83aa4e4905692ca88beb2f9e91f
       with:
         body: 'This pull request was created automatically by the [`sync-templates-and-ci-config`](https://github.com/Homebrew/homebrew-cask/blob/master/.github/workflows/sync-templates-and-ci-config.yml)
           workflow.
