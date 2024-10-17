@@ -546,7 +546,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       name: "\U0001F9F9 Delete old release"
-      uses: dev-drprasad/delete-tag-and-release@v0.2.0
+      uses: dev-drprasad/delete-tag-and-release@v1.0.1
       with:
         delete_release: true
         tag_name: development
