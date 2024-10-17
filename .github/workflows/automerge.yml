@@ -245,7 +245,7 @@ jobs:
 
         sudo sh -c ''echo 1 > /proc/sys/net/ipv4/ip_forward'''
     - continue-on-error: true
-      uses: reitermarkus/automerge@46b8b95bac3325964476acc56f9160a98d1e7291
+      uses: reitermarkus/automerge@634d0a4b51134c163eee182ac9aa79133eb33e8d
       with:
         do-not-merge-labels: do not merge,awaiting maintainer feedback,awaiting user
           reply
