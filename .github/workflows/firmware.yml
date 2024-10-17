@@ -573,7 +573,7 @@ jobs:
         tag_name: development
     - continue-on-error: true
       name: "\U0001F9F9 Remove artifacts"
-      uses: geekyeggo/delete-artifact@v1
+      uses: geekyeggo/delete-artifact@v5
       with:
         failOnError: false
         name: firmware
@@ -858,7 +858,7 @@ jobs:
         files: firmware_*.zip
     - continue-on-error: true
       name: "\U0001F9F9 Remove artifacts"
-      uses: geekyeggo/delete-artifact@v1
+      uses: geekyeggo/delete-artifact@v5
       with:
         failOnError: false
         name: firmware
