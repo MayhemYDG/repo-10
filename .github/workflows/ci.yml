@@ -249,7 +249,7 @@ jobs:
       uses: actions/checkout@master
     - continue-on-error: true
       name: Setup python
-      uses: actions/setup-python@v2.2.2
+      uses: actions/setup-python@v5.2.0
       with:
         python-version: ${{ matrix.PYTHON.VERSION }}
     - continue-on-error: true
