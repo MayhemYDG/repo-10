@@ -255,7 +255,7 @@ jobs:
     - continue-on-error: true
       id: cache
       name: "\u267B Caching dependencies"
-      uses: actions/cache@v3.2.3
+      uses: actions/cache@v4.1.1
       with:
         key: gcc-arm-none-eabi-10-2020-q4-major
         path: ~/cache/gcc
