@@ -248,7 +248,7 @@ jobs:
     - continue-on-error: true
       uses: actions/checkout@v3
     - continue-on-error: true
-      uses: wangyoucao577/go-release-action@v1.38
+      uses: wangyoucao577/go-release-action@v1.52
       with:
         binary_name: dependabot
         github_token: ${{ secrets.GITHUB_TOKEN }}
