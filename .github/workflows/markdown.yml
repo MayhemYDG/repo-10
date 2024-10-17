@@ -247,7 +247,7 @@ jobs:
     - continue-on-error: true
       uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
     - continue-on-error: true
-      uses: DavidAnson/markdownlint-cli2-action@744f913a124058ee903768d3adb92a4847e5d132
+      uses: DavidAnson/markdownlint-cli2-action@db43aef879112c3119a410d69f66701e0d530809
       with:
         globs: '**/*.md
 
