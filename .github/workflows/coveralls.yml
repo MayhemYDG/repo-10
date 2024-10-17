@@ -305,7 +305,7 @@ jobs:
         -o ./lcov.info
     - continue-on-error: true
       name: Coveralls upload
-      uses: coverallsapp/github-action@v2.3.0
+      uses: coverallsapp/github-action@v2.3.3
       with:
         git-branch: ${{ matrix.branches.branch }}
         git-commit: ${{ env.githubid }}
