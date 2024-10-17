@@ -272,22 +272,22 @@ jobs:
         python-version: '3.11'
     - continue-on-error: true
       name: Download e2e coverage
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4
       with:
         name: coverage-e2e-data
     - continue-on-error: true
       name: Download monitoring coverage
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4
       with:
         name: coverage-monitoring-data
     - continue-on-error: true
       name: Download integrations coverage
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4
       with:
         name: coverage-integrations-data
     - continue-on-error: true
       name: Download unit coverage
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4
       with:
         name: coverage-unit-data
     - continue-on-error: true
